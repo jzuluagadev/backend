@@ -23,6 +23,4 @@ async def usersjson():
 
 @app.get("/users")
 async def users():
-    return users_list #(name = "juan", surname = "dev", github = "jzuluagadev", age= 42),
-               #(name:"jose", surname:"zulu", github:"jzulu", age: 42),
-                #(name:"juli", surname:"zuga", github:"julidiseño", age: 19),
+    return users_list 
