@@ -28,5 +28,5 @@ async def users():
 
 @app.get("/users/{id}")
 async def user(id: int):
-    user = filter(lambda user: user.id = id, users_list)
-    return list(users)
+    users = filter(lambda user: user.id == id, users_list)
+    return list(users)[0]
